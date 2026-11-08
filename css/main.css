@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --font: "JetBrains Mono", monospace;
+    --background: #0f0f11;
+    --background-accent: #18181c;
+    --border: #3a125b;
+    --foreground: #e4e1f2;
+    --faded-foreground: #b1acc4;
+    --accent: #541a84;
+    --links: #167047;
+}
+
+body {
+    font-family: var(--font);
+    font-size: larger;
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    margin: 5vh 15vw 5vh 15vw;
+}
+
+footer {
+    border-top: 2px solid var(--background-accent);
+    background-color: var(--background-accent);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    a {
+        font-size: smaller;
+        color: var(--faded-foreground);
+    }
+}
+
+h1, h2 {
+    margin-bottom: 0.4em;
+}
+
+h3, h4, h5, h6 {
+    margin-bottom: 0.2em;
+}
+
+.block {
+    background-color: var(--background-accent);
+    border: 2px solid var(--border);
+    padding: 6px 16px;
+    margin-bottom: 0.5em;
+}
+
+a:link {
+    color: var(--links);
+}
+
+a:visited {
+    color: var(--links);
+}
+
+a:hover {
+    color: var(--links);
+}
+
+a:active {
+    color: var(--links)
+}
+
+.accent {
+    color: var(--accent)
+}
