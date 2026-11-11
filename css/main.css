@@ -38,6 +38,7 @@ footer {
     a {
         font-size: smaller;
         color: var(--faded-foreground);
+        text-decoration: none;
     }
 }
 
