@@ -4,21 +4,22 @@
     --font: "JetBrains Mono", monospace;
     --background: #0f0f11;
     --background-accent: #18181c;
-    --border: #3a125b;
+    --border: #312f5b;
     --foreground: #e4e1f2;
     --faded-foreground: #b1acc4;
-    --accent: #541a84;
-    --links: #167047;
+    --accent: #44408e;
+    --links: #7641e0;
+    --titles: #e07641;
 }
 
 body {
     font-family: var(--font);
-    font-size: larger;
+    font-size: large;
     background-color: var(--background);
     color: var(--foreground);
     margin: 0;
     padding: 0;
-
+    text-wrap: pretty;
 }
 
 .main {
@@ -44,6 +45,10 @@ h1, h2 {
     margin-bottom: 0.4em;
 }
 
+h2 {
+    color: var(--titles);
+}
+
 h3, h4, h5, h6 {
     margin-bottom: 0.2em;
 }
@@ -53,6 +58,13 @@ h3, h4, h5, h6 {
     border: 2px solid var(--border);
     padding: 6px 16px;
     margin-bottom: 0.5em;
+    h3, h4, h5, h6 {
+        margin-top: 0.5em;
+    }
+    p {
+        margin-top: 0.2em;
+        margin-bottom: 0.5em;
+    }
 }
 
 a:link {

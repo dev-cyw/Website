@@ -4,30 +4,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="darkreader-lock">
         <title>[dev-cyw]</title>
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
         <link rel="stylesheet" href="/css/main.css">
     </head>
+    <header id="top">
+
+    </header>
     <body>
         <div class="main">
             <h1><span class="accent">[</span>dev-cyw<span class="accent">]</span></h1>
             <p>i use <b>arch</b> btw</p>
             <h2 id="projects">[projects]</h2>
+            <h3><a href="https://github.com/dev-cyw/Website" target="_blank">dev-cyw</a></h3>
             <section class="block">
-                <h3><a href="https://github.com/dev-cyw" target="_blank">dev-cyw</a></h3>
-                <p>this website, heavy inspiration from <a href="symlinx.net" target="_blank">symlinx.net</a></p>
+                <p>It's this website it has heavy inspiration from <a href="https://symlinx.net/" target="_blank">symlinx.net</a>
+                    and my general personal website that i will update regularly (hopefully) that is hosted on homelab server</p>
             </section>
             <h2 id="about-me"">[about me]</h2>
             <h3>General</h3>
             <section class="block">
-                <p>I am an 3rd year undergraduate computer science student</p>
+                <h4>Me</h4>
+                <p>
+                    I am an undergraduate computer science student interested in cybersecurity such as supply chain attacks
+                    and general software development with programming the languages C#, C++ And Go. I am currently focusing
+                    on my dissertation which is a static analysis tool to prevent malware from the AUR within it's PKGBUILDS.
+                    I eventually want to get a job within cybersecurity being something like a security researcher<br>
+                </p>
+                <h4>Hobbies</h4>
+                <p>
+                    I like to tinker may random electronics such as the old HP Desktop that im using as my homelab, ESP-32's,
+                    Raspberry Pi picos etc.<br>
+                    I also enjoy camping and hiking i have hiked and camped to and around Malham Cove
+                </p>
+                <h4>Games</h4>
+                <p>
+                    My favourite games are: Hollow Knight, Cyberpunk 2077, And Pokemon Black & White.<br>
+                </p>
             </section>
             <h3>Computers</h3>
             <section class="block">
                 <h4>PC</h4>
-                <p></p>
+                <p>
+                    The current specs of my PC<br>
+                    CPU: AMD Ryzen 5 5600x<br>
+                    GPU: AMD Radeon RX 9060XT<br>
+                    I am using Arch Linux and my window manager is hyprland with a small quickshell config to have a clock at the top
+                </p>
                 <h4>Laptop</h4>
-                <p>A thinkpad L14 gen 2 running arch linux with hyprland </p>
+                <p>A thinkpad L14 gen 2 also running arch linux with hyprland with <a href="https://github.com/kevichi7/DankMaterialShell" target="_blank">DankMaterialShell</a></p>
                 <h4>Homelab/Server</h4>
                 <p>A HP prodesk 400 G3 SFF upgraded to 12GB of ram and and m.2 nvme main drive it is running ubuntu server,
                     its running Jellyfin, Immich, Portainer and this website via nginx and cloudflared.</p>
@@ -39,7 +65,14 @@
             </section>
         </div>
         <footer>
-            <a>top</a>
+            <a href="#" id="topLink">Top of page</a>
+
+            <script>
+              document.getElementById("topLink").addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              });
+            </script>
         </footer>
     </body>
 </html>
